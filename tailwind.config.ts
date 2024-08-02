@@ -8,19 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
-        },
-        slideIn: {
-          '0%': { transform: 'translateX(-100%)', opacity: 0 },
-          '100%': { transform: 'translateX(0)', opacity: 1 },
-        },
-      },
-      animation: {
-        fadeIn: 'fadeIn 1s ease-in',
-        slideIn: 'slideIn 1s ease-in',
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
